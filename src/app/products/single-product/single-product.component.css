@@ -1,0 +1,20 @@
+.product-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.product-name,
+.product-price {
+  flex: 1;
+}
+
+.product-imageUrl {
+  max-width: 100px;
+  height: auto;
+}
+
+.sale {
+  border: 10px solid blue;
+}

@@ -1,0 +1,12 @@
+<div [ngClass]="{'sale': product.onSale}" class="product-container">
+  <h1>{{ product.name }}</h1>
+  <img
+    class="product-imageUrl"
+    [src]="product.imageUrl"
+    alt="{{ product.name }}"
+  />
+  <p>Price: {{ product.price }}kr</p>
+  <p>Quantity in Cart: {{ cart.quantity }}</p>
+  <button (click)="addToCart()">Add to Cart</button>
+  <button (click)="removeFromCart()" [disabled]="cart.quantity === 0">Remove from Cart</button>
+</div>
